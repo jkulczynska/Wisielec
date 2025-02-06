@@ -46,7 +46,7 @@ class GameLogic
             
             if (input == "")
             {
-                Console.WriteLine("Nie wpisano nic! Spróbuj ponownie.");
+                Console.WriteLine("Nie wpisano nic! Spróbuj ponownie. (Naciśnij 'enter', żeby spróbować ponownie) ");
                 Console.ReadKey();
                 continue;
             }
@@ -62,7 +62,7 @@ class GameLogic
                 else
                 {
                     lives--;
-                    Console.WriteLine("Złe słowo! Straciłeś życie.");
+                    Console.WriteLine("Złe słowo! Straciłeś życie. (Naciśnij 'enter', żeby spróbować ponownie)");
                     Console.ReadKey();
                     continue;
                 }
@@ -75,7 +75,7 @@ class GameLogic
             
             if (!char.IsLetter(letter))
             {
-                Console.WriteLine("To nie jest litera! Spróbuj ponownie.");
+                Console.WriteLine("To nie jest litera! Spróbuj ponownie. (Naciśnij 'enter', żeby spróbować ponownie)");
                 Console.ReadKey();
                 continue;
             }
@@ -92,7 +92,7 @@ class GameLogic
             }
             if (alreadyGuessed)
             {
-                Console.WriteLine("Już podano tę literę!");
+                Console.WriteLine("Już podano tę literę! (Naciśnij 'enter', żeby spróbować ponownie)");
                 Console.ReadKey();
                 continue;
             }
@@ -114,7 +114,7 @@ class GameLogic
             if (!found)
             {
                 lives--;
-                Console.WriteLine("Zła litera! Straciłeś życie.");
+                Console.WriteLine("Zła litera! Straciłeś życie. (Naciśnij 'enter', żeby spróbować ponownie)");
                 Console.ReadKey();
             }
         }
