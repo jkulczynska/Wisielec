@@ -1,12 +1,15 @@
 ﻿using System;
 
-class DataBaseWords
+class DataBaseWords // creating list with words
 {
-    private static readonly string[] Words = { "programowanie", "komputer", "wisielec", "csharp", "konsola" };
+    private static List<string> Words = new List<string> { "programowanie", "komputer", "kod", "konsola", "klawiatura", "monitor" };
+    
+    
+    
 
     public static string GetRandomWord()
     {
         Random rand = new Random();
-        return Words[rand.Next(Words.Length)];
+        return Words[rand.Next(Words.Count)];
     }
 }
