@@ -2,7 +2,7 @@
 
 class DataBaseWords // creating list with words
 {
-    private static List<string> Words = new List<string> { "programowanie", "komputer", "kod", "konsola", "klawiatura", "monitor" };
+    private static List<string> Words = new List<string> { "python", "procesor", "router", "algorytm", "programowanie", "komputer", "kod", "konsola", "klawiatura", "monitor" };
     
     
     
